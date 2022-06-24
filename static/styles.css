@@ -1,0 +1,46 @@
+
+
+.info_form{
+    width:30%;
+}
+
+.drive_form{
+    width:50%;
+}
+
+#info{
+
+    margin:10%;
+}
+
+#drive{
+    margin:10%;
+}
+
+.container_parents{
+    display: flex;
+}
+
+/* .container_left{
+    width:65%;
+}
+
+.container_right{
+    width:35%;
+} */
+
+.box_left{
+    flex:1;
+}
+
+.box_mid{
+    flex:4;
+}
+
+.box_right{
+    flex:1;
+}
+
+.input{
+    width:50%;
+}
