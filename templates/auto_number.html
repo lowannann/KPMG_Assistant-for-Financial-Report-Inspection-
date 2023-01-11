@@ -22,7 +22,6 @@
           <ul class="nav nav-pills">
             <li class="nav-item"><a href="home.html" class="btn btn-primary active" aria-current="page">重大訊息分類</a></li>
             <li class="nav-item"><a href="auto_number.html" class="nav-link">數字勾稽</a></li>
-
           </ul>
         </header>
     </div>
@@ -43,85 +42,37 @@
                 <label class="btn btn-outline-primary" for="btnradio1"><a href="auto_number.html" class="nav-link">四大表｜相關科目</a></label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio2"><a href="number.html" class="nav-link">四大表｜科目與其附註金額</a></label>  
+                <label class="btn btn-outline-primary" for="btnradio2"><a href="number.html" class="nav-link">四大表｜科目與其附註金額</a></label>
             </div>
 
             <form action="/num" method="get">
                 <div class="form-group item">
                 <br>
                   <label>XBRL URL</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" name="symbol1" aria-describedby="emailHelp" placeholder="https://mops.twse.com.tw/server-java/t164sb01?step=3&SYEAR=2021&file_name=tifrs-fr1-m1-ci-cr-2603-2021Q4.html" width="50" height="50"><br>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">四大表</label>
-                        </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="1">資產負債表</option>
-                        <option value="2">綜合損益表</option>
-                        <option value="3">現金流量表</option>
-                        <option value="3">權益變動表</option>
-                        </select> 
-                        &nbsp 
-                        &nbsp                      
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="https://mops.twse.com.tw/server-java/t164sb01?step=3&SYEAR=2021&file_name=tifrs-fr1-m1-ci-cr-2603-2021Q4.html" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                    <button type="submit" class="btn btn-outline-primary"  id="button-addon2">Submit</button>
                     </div>
                 </div>
+                </div>
 
+ 
             <br>
-
             </form>
 
                 
             <form action="/num" method="get">
 
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="輸入科目" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                    </div>
-                </div>
             </br>
-                <output name="disclose">對應附註揭露</output>
-
+                <output name="disclose">勾稽結果</output>
 
             </form>
+        </br>
 
-            </br>
-
-            <div class="row">
-                <div class="col">
-                    <form action="/num" method="get">
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="請輸入當期金額" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                            </div>
-                        </div>
-                    </br>
-                        <output name="disclose">正確或錯誤 當期金額為123</output>
-
-                    </form>
-                </div>
-
-                <div class="col">
-                    <form action="/num" method="get">
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="請輸入去年同期金額" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                            </div>
-                        </div>
-                    </br>
-                        <output name="disclose">正確或錯誤 去年同期金額為123</output>
-                    </form>
-                </div>
-            </div>
 
         </div>
-
+    
         <div class="box_right"></div>
     </div>
 
@@ -160,6 +111,7 @@
           </div>
         </div>
       </footer>
+
 
     
 </body>
